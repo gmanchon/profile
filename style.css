@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400|Roboto:300,700');
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+/* Global */
+
+body {
+  background-color: rgba(81, 127, 99, .1);
+  color: rgba(40, 83, 107, 1);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+h1, h2 {
+  /* color */
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  color: rgba(3, 63, 99, 1);
+  font-size: 32px;
+}
+
+h2 {
+  color: rgba(81, 127, 99, 1);
+  font-size: 24px;
+}
+
+.container {
+  /* align divs */
+  /*width: 700px;*/ /* overridden by media queries */
+  margin: 0 auto;
+}
+
+.text-align {
+  /* align div content */
+  text-align: center;
+}
+
+a {
+  color: rgba(81, 127, 99, 1);
+}
+
+a:hover {
+  color: rgba(3, 63, 99, 1);
+}
+
+/* Components */
+
+.card {
+  /* container */
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  margin: 20px 30px;
+  padding: 30px;
+}
+
+.img-circle, .div-circle {
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+}
+
+.img-circle {
+  /*display: block;*/
+  width: 150px;
+  margin: 0 auto;
+}
+
+.div-circle {
+  width: 150px;
+  height: 150px;
+  margin: 30px auto;
+  background-image: url("./images/id.png");
+}
+
+.div-circle::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 65px;
+  left: 51px;
+  width: 50px;
+  height: 50px;
+  background-image: url("./images/must.png");
+  background-size: 50px 50px;
+}
+
+.btn-green {
+  color: white;
+  background-color: rgba(3, 63, 99, 1);
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(3, 63, 99, 1);
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.btn-green:hover {
+  color: rgba(3, 63, 99, 1);
+  background-color: white;
+  border: 1px solid rgba(3, 63, 99, 1);
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.list-inline a {
+  font-size: 64px;
+}
+
+/* Specific */
